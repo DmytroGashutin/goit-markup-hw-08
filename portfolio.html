@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header-nav">
+          <a class="logo" href="">Web<span class="logo-dark">Studio</span></a>
+          <ul class="header-nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link__current" href="">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header__mobile__button" data-menu-open>
+          <svg width="40" height="40" aria-label="Кнопка мобильного меню">
+            <use
+              class="icon__open__menu"
+              href="./images/symbol-defs.svg#icon-mobile-open-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile__menu .is-open" data-menu>
+          <button
+            type="button"
+            class="header__mobile__button__close"
+            data-menu-close
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Кнопка закрытия мобильного меню"
+            >
+              <use
+                class="icon__close__menu"
+                href="./images/symbol-defs.svg#icon-mobile-close-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile__nav">
+            <ul class="mobile__nav__list">
+              <li class="mobile__nav__item">
+                <a class="mobile__nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="mobile__nav__item">
+                <a
+                  class="mobile__nav__link mobile__nav__link__current"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile__nav__item">
+                <a class="mobile__nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+
+            <div class="mobile__contacts__container">
+              <ul class="mobile__contact__list">
+                <li class="mobile__contact__item">
+                  <a class="mobile__contact__tel" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile__contact__item">
+                  <a
+                    class="mobile__contact__mail"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile__subscribe">
+                <li class="mobile__subscribe__list">
+                  <a class="mobile__subscribe__link" href="">Instagram</a>
+                </li>
+                <li class="mobile__subscribe__list">
+                  <a class="mobile__subscribe__link" href="">Twitter</a>
+                </li>
+                <li class="mobile__subscribe__list">
+                  <a class="mobile__subscribe__link" href="">Facebook</a>
+                </li>
+                <li class="mobile__subscribe__list">
+                  <a class="mobile__subscribe__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__container">
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="connect__link" href="mailto:info@devstudio.com"
+                ><svg class="connect__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-letter"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="connect__contacts">
+              <a class="connect__link" href="tel:+380961111111"
+                ><svg class="connect__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="portfolio">
+      <section class="section">
+        <div class="container">
+          <h1 class="works">Наши работы</h1>
+          <ul class="buttons-work">
+            <li class="works-list">
+              <button class="btn-pornfolio" type="button">Все</button>
+            </li>
+            <li class="works-list">
+              <button class="btn-pornfolio" type="button">Веб-сайты</button>
+            </li>
+            <li class="works-list">
+              <button class="btn-pornfolio" type="button">Приложения</button>
+            </li>
+            <li class="works-list">
+              <button class="btn-pornfolio" type="button">Приложения</button>
+            </li>
+            <li class="works-list">
+              <button class="btn-pornfolio" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="photo-works">
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-tehno-1x.webp 1x,
+                        ./images/descatop/descatop-tehno-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-tehno-1x.jpg 1x,
+                        ./images/descatop/descatop-tehno-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-tehno-1x.webp 1x,
+                        ./images/tablet/tablet-tehno-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-tehno-1x.jpg 1x,
+                        ./images/tablet/tablet-tehno-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-tehno-1x.webp 1x,
+                        ./images/mobile/mobile-tehno-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-tehno-1x.jpg,
+                        ./images/mobile/mobile-tehno-2x.jpg
+                      "
+                    />
+                    <img src="#" alt="макет сайта" />
+                  </picture>
+
+                  <p class="photo-text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-basketball-1x.webp 1x,
+                        ./images/descatop/descatop-basketball-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-basketball-1x.jpg 1x,
+                        ./images/descatop/descatop-basketball-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-basketball-1x.webp 1x,
+                        ./images/tablet/tablet-basketball-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-basketball-1x.jpg 1x,
+                        ./images/tablet/tablet-basketball-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-basketball-1x.webp 1x,
+                        ./images/mobile/mobile-basketball-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-basketball-1x.jpg,
+                        ./images/mobile/mobile-basketball-2x.jpg
+                      "
+                    />
+                    <img src="#" alt="два баскетболиста" />
+                  </picture>
+
+                  <p class="photo-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis ex aperiam est qui dignissimos, voluptatibus fugiat
+                    explicabo tempora itaque cupiditate.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-restoran-1x.webp 1x,
+                        ./images/descatop/descatop-restoran-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-restoran-1x.jpg 1x,
+                        ./images/descatop/descatop-restoran-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-restoran-1x.webp 1x,
+                        ./images/tablet/tablet-restoran-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-restoran-1x.jpg 1x,
+                        ./images/tablet/tablet-restoran-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-restoran-1x.webp 1x,
+                        ./images/mobile/mobile-restoran-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-restoran-1x.jpg,
+                        ./images/mobile/mobile-restoran-2x.jpg
+                      "
+                    />
+                    <img
+                      src="./images/restoran.jpg"
+                      alt="рыба, логотип ресторана"
+                    />
+                  </picture>
+
+                  <p class="photo-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis ex aperiam est qui dignissimos, voluptatibus fugiat
+                    explicabo tempora itaque cupiditate.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-project-1x.webp 1x,
+                        ./images/descatop/descatop-project-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-project-1x.jpg 1x,
+                        ./images/descatop/descatop-project-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-project-1x.webp 1x,
+                        ./images/tablet/tablet-project-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-project-1x.jpg 1x,
+                        ./images/tablet/tablet-project-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-project-1x.webp 1x,
+                        ./images/mobile/mobile-project-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-project-1x.jpg,
+                        ./images/mobile/mobile-project-2x.jpg
+                      "
+                    />
+                    <img src="#" alt="наушники" />
+                  </picture>
+
+                  <p class="photo-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis ex aperiam est qui dignissimos, voluptatibus fugiat
+                    explicabo tempora itaque cupiditate.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-boxes-1x.webp 1x,
+                        ./images/descatop/descatop-boxes-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-boxes-1x.jpg 1x,
+                        ./images/descatop/descatop-boxes-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-boxes-1x.webp 1x,
+                        ./images/tablet/tablet-boxes-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-boxes-1x.jpg 1x,
+                        ./images/tablet/tablet-boxes-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-boxes-1x.webp 1x,
+                        ./images/mobile/mobile-boxes-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-boxes-1x.jpg,
+                        ./images/mobile/mobile-boxes-2x.jpg
+                      "
+                    />
+                    <img src="#" alt="две коробки" />
+                  </picture>
+
+                  <p class="photo-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis ex aperiam est qui dignissimos, voluptatibus fugiat
+                    explicabo tempora itaque cupiditate.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-borders-1x.webp 1x,
+                        ./images/descatop/descatop-borders-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-borders-1x.jpg 1x,
+                        ./images/descatop/descatop-borders-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-borders-1x.webp 1x,
+                        ./images/tablet/tablet-borders-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-borders-1x.jpg 1x,
+                        ./images/tablet/tablet-borders-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-borders-1x.webp 1x,
+                        ./images/mobile/mobile-borders-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-borders-1x.jpg,
+                        ./images/mobile/mobile-borders-2x.jpg
+                      "
+                    />
+                    <img src="#" alt="макет сайта на мониторе" />
+                  </picture>
+
+                  <p class="photo-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis ex aperiam est qui dignissimos, voluptatibus fugiat
+                    explicabo tempora itaque cupiditate.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">
+                    <span lang="en">Inspiration has no Borders</span>
+                  </h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-limited-1x.webp 1x,
+                        ./images/descatop/descatop-limited-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-limited-1x.jpg 1x,
+                        ./images/descatop/descatop-limited-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-limited-1x.webp 1x,
+                        ./images/tablet/tablet-limited-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-limited-1x.jpg 1x,
+                        ./images/tablet/tablet-limited-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-limited-1x.webp 1x,
+                        ./images/mobile/mobile-limited-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-limited-1x.jpg,
+                        ./images/mobile/mobile-limited-2x.jpg
+                      "
+                    />
+                    <img src="#" alt="открытая книга" />
+                  </picture>
+
+                  <p class="photo-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis ex aperiam est qui dignissimos, voluptatibus fugiat
+                    explicabo tempora itaque cupiditate.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-lab-1x.webp 1x,
+                        ./images/descatop/descatop-lab-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-lab-1x.jpg 1x,
+                        ./images/descatop/descatop-lab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-lab-1x.webp 1x,
+                        ./images/tablet/tablet-lab-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-lab-1x.jpg 1x,
+                        ./images/tablet/tablet-lab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-lab-1x.webp 1x,
+                        ./images/mobile/mobile-lab-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-lab-1x.jpg,
+                        ./images/mobile/mobile-lab-2x.jpg
+                      "
+                    />
+                    <img src="#" alt="логотип сайта" />
+                  </picture>
+
+                  <p class="photo-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis ex aperiam est qui dignissimos, voluptatibus fugiat
+                    explicabo tempora itaque cupiditate.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="photo-list">
+              <a href="" class="photo-link">
+                <div class="photo-works-wrap">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-business-1x.webp 1x,
+                        ./images/descatop/descatop-business-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/descatop/descatop-business-1x.jpg 1x,
+                        ./images/descatop/descatop-business-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-business-1x.webp 1x,
+                        ./images/tablet/tablet-business-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/tablet-business-1x.jpg 1x,
+                        ./images/tablet/tablet-business-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-business-1x.webp 1x,
+                        ./images/mobile/mobile-business-2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 270px)"
+                      srcset="
+                        ./images/mobile/mobile-business-1x.jpg,
+                        ./images/mobile/mobile-business-2x.jpg
+                      "
+                    />
+                    <img src="#" alt="сайт для бизнеса" />
+                  </picture>
+
+                  <p class="photo-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis ex aperiam est qui dignissimos, voluptatibus fugiat
+                    explicabo tempora itaque cupiditate.
+                  </p>
+                </div>
+                <div class="portfolio-description">
+                  <h2 class="portfolio-title">
+                    <span lang="en">Growing Business</span>
+                  </h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="addres-container">
+          <a class="logo logo-footer" href=""
+            >Web<span class="logo-white">Studio</span></a
+          >
+          <address>
+            <ul class="footer-address">
+              <li class="footer-contacts-list">
+                <a
+                  class="address"
+                  href="https://goo.gl/maps/A4n6LWpWpNqbDFTB7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-contacts-list">
+                <a class="footer-contacts" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-contacts-list">
+                <a class="footer-contacts" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-container">
+          <h2 class="join-title">Присоединяйтесь</h2>
+          <ul class="join-list">
+            <li class="join-item">
+              <a href="" class="join-link">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-item">
+              <a href="" class="join-link">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-item">
+              <a href="" class="join-link">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-item">
+              <a href="" class="join-link">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-subscribe-form">
+          <p class="footer-subscribe-form-text">Подпишитесь на рассылку</p>
+          <label for=""
+            ><input
+              type="mail"
+              class="footer-subscribe-input"
+              name="e-mail"
+              placeholder="E-mail"
+          /></label>
+          <button class="footer-subscribe-button" type="submit">
+            Подписаться<svg
+              class="footer-subscribe-icon"
+              width="24"
+              height="24"
+            >
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/mobile_menu.js"></script>
+</html>
